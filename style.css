@@ -36,21 +36,12 @@ a {
 .navbar {
     width: 100%;
     padding: 25px 7%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: transparent;
 
-    /* Slight transparency */
-    background: rgba(255, 255, 255, 0.90);
-    backdrop-filter: blur(8px);
-
-    position: sticky;
-    top: 0;
-
-    z-index: 100;
-
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: none;
 }
 
 .logo {
@@ -264,7 +255,7 @@ a {
 .projects-section {
     background: transparent;
 
-    color: white;
+    color: black;
 }
 
 .section-number {
@@ -767,10 +758,9 @@ a {
 footer {
     padding: 30px 7%;
 
-    /* Transparent so background continues */
-    background: rgba(8, 8, 8, 0.70);
+    background: transparent;
 
-    color: #aaa;
+    color: black;
 
     display: flex;
 
