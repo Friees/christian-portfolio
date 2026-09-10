@@ -9,20 +9,24 @@
     scroll-behavior: smooth;
 }
 
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f5f5f5;
+
+    /* ONE BACKGROUND FOR THE WHOLE WEBSITE */
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     color: #171717;
     line-height: 1.6;
 }
-
 
 a {
     text-decoration: none;
     color: inherit;
 }
-
 
 
 /* =========================
@@ -37,7 +41,9 @@ a {
     justify-content: space-between;
     align-items: center;
 
-    background: white;
+    /* Slight transparency */
+    background: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(8px);
 
     position: sticky;
     top: 0;
@@ -47,19 +53,16 @@ a {
     border-bottom: 1px solid #e5e5e5;
 }
 
-
 .logo {
     font-size: 15px;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
-
 .nav-links {
     display: flex;
     gap: 30px;
 }
-
 
 .nav-links a {
     font-size: 14px;
@@ -68,11 +71,9 @@ a {
     transition: 0.3s;
 }
 
-
 .nav-links a:hover {
     color: #000;
 }
-
 
 
 /* =========================
@@ -92,15 +93,14 @@ a {
 
     align-items: center;
 
-    background: white;
+    /* Transparent so body background shows */
+    background: transparent;
 }
-
 
 .hero-left {
     display: flex;
     justify-content: center;
 }
-
 
 
 /* =========================
@@ -118,11 +118,9 @@ a {
     overflow: hidden;
 
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
-
 
 .profile-picture img {
     width: 100%;
@@ -134,12 +132,11 @@ a {
 }
 
 
-
 /* =========================
    HERO TEXT
 ========================= */
 
-.small-title {
+.medium-title {
     font-size: 13px;
 
     letter-spacing: 3px;
@@ -149,7 +146,6 @@ a {
     margin-bottom: 10px;
 }
 
-
 .hero h1 {
     font-size: clamp(45px, 7vw, 85px);
 
@@ -157,7 +153,6 @@ a {
 
     margin-bottom: 15px;
 }
-
 
 .hero h2 {
     font-size: 24px;
@@ -169,7 +164,6 @@ a {
     margin-bottom: 25px;
 }
 
-
 .intro {
     max-width: 650px;
 
@@ -179,7 +173,6 @@ a {
 
     margin-bottom: 35px;
 }
-
 
 
 /* =========================
@@ -196,7 +189,6 @@ a {
     max-width: 650px;
 }
 
-
 .option-box {
     border: 1px solid #ddd;
 
@@ -208,11 +200,10 @@ a {
 
     gap: 15px;
 
-    background: #fafafa;
+    background: rgba(250, 250, 250, 0.90);
 
     transition: 0.3s;
 }
-
 
 .option-box:hover {
     background: #111;
@@ -222,13 +213,11 @@ a {
     transform: translateY(-5px);
 }
 
-
 .box-icon {
     font-size: 13px;
 
     color: #888;
 }
-
 
 .option-box h3 {
     font-size: 17px;
@@ -236,25 +225,21 @@ a {
     margin-bottom: 3px;
 }
 
-
 .option-box p {
     font-size: 13px;
 
     color: #777;
 }
 
-
 .option-box:hover p {
     color: #bbb;
 }
-
 
 .arrow {
     margin-left: auto;
 
     font-size: 22px;
 }
-
 
 
 /* =========================
@@ -272,16 +257,15 @@ a {
 
     gap: 40px;
 
-    background: #f5f5f5;
+    /* Transparent */
+    background: transparent;
 }
 
-
 .projects-section {
-    background: #111;
+    background: transparent;
 
     color: white;
 }
-
 
 .section-number {
     font-size: 14px;
@@ -290,7 +274,6 @@ a {
 
     letter-spacing: 2px;
 }
-
 
 .section-label {
     font-size: 13px;
@@ -302,11 +285,9 @@ a {
     margin-bottom: 10px;
 }
 
-
 .section-content {
     max-width: 1100px;
 }
-
 
 .section-content h2 {
     font-size: clamp(35px, 5vw, 65px);
@@ -315,7 +296,6 @@ a {
 
     line-height: 1.1;
 }
-
 
 .large-text {
     max-width: 800px;
@@ -327,11 +307,9 @@ a {
     margin-bottom: 50px;
 }
 
-
 .projects-section .large-text {
     color: #aaa;
 }
-
 
 
 /* =========================
@@ -346,15 +324,13 @@ a {
     gap: 15px;
 }
 
-
 .info-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.92);
 
     border: 1px solid #ddd;
 
     padding: 30px;
 }
-
 
 .info-card h3 {
     margin-bottom: 15px;
@@ -362,13 +338,11 @@ a {
     font-size: 18px;
 }
 
-
 .info-card p {
     color: #666;
 
     margin-bottom: 5px;
 }
-
 
 
 /* =========================
@@ -379,11 +353,9 @@ a {
     margin-bottom: 15px;
 }
 
-
 .education-item:last-child {
     margin-bottom: 0;
 }
-
 
 .education-item strong {
     display: block;
@@ -397,13 +369,11 @@ a {
     margin-bottom: 2px;
 }
 
-
 .education-item p {
     color: #666;
 
     margin-bottom: 0;
 }
-
 
 
 /* =========================
@@ -420,7 +390,6 @@ a {
     gap: 10px;
 }
 
-
 .skills-vertical span {
     border: 1px solid #ccc;
 
@@ -432,7 +401,6 @@ a {
 
     background: white;
 }
-
 
 
 /* =========================
@@ -449,7 +417,6 @@ a {
     margin-bottom: 30px;
 }
 
-
 .skills span {
     border: 1px solid #ccc;
 
@@ -461,7 +428,6 @@ a {
 
     background: white;
 }
-
 
 
 /* =========================
@@ -484,11 +450,9 @@ a {
     transition: 0.3s;
 }
 
-
 .next-button:hover {
     background: #333;
 }
-
 
 
 /* =========================
@@ -503,22 +467,21 @@ a {
     gap: 20px;
 }
 
-
 .project-card {
-    border: 1px solid #333;
+    border: 1px solid #555;
 
     padding: 35px;
+
+    background: rgba(17, 17, 17, 0.65);
 
     transition: 0.3s;
 }
 
-
 .project-card:hover {
-    background: #1d1d1d;
+    background: rgba(29, 29, 29, 0.90);
 
     transform: translateY(-5px);
 }
-
 
 .project-number {
     color: #777;
@@ -528,20 +491,17 @@ a {
     margin-bottom: 25px;
 }
 
-
 .project-card h3 {
     font-size: 25px;
 
     margin-bottom: 15px;
 }
 
-
 .project-card p {
     color: #aaa;
 
     margin-bottom: 20px;
 }
-
 
 .project-tags {
     display: flex;
@@ -553,7 +513,6 @@ a {
     margin-bottom: 25px;
 }
 
-
 .project-tags span {
     border: 1px solid #444;
 
@@ -563,7 +522,6 @@ a {
 
     color: #aaa;
 }
-
 
 .project-card button {
     padding: 12px 20px;
@@ -579,11 +537,9 @@ a {
     font-size: 13px;
 }
 
-
 .project-card button:hover {
     background: #ddd;
 }
-
 
 
 /* =========================
@@ -613,7 +569,6 @@ a {
     overflow-y: auto;
 }
 
-
 .modal-content {
     background: white;
 
@@ -632,13 +587,11 @@ a {
     position: relative;
 }
 
-
 .modal-content h2 {
     font-size: 40px;
 
     margin-bottom: 20px;
 }
-
 
 .modal-content p {
     color: #666;
@@ -646,11 +599,9 @@ a {
     margin-bottom: 30px;
 }
 
-
 .modal-content h3 {
     margin-bottom: 15px;
 }
-
 
 
 /* =========================
@@ -674,11 +625,9 @@ a {
     color: #111;
 }
 
-
 .close-button:hover {
     color: #777;
 }
-
 
 
 /* =========================
@@ -699,7 +648,6 @@ a {
     margin: 20px 0 10px;
 }
 
-
 .project-image {
     width: 100%;
 
@@ -713,7 +661,6 @@ a {
 
     border: 1px solid #ddd;
 }
-
 
 
 /* =========================
@@ -750,21 +697,17 @@ a {
     align-items: center;
 }
 
-
 .gallery-button:hover {
     background: black;
 }
-
 
 .gallery-button.previous {
     left: 10px;
 }
 
-
 .gallery-button.next {
     right: 10px;
 }
-
 
 
 /* =========================
@@ -782,7 +725,6 @@ a {
 }
 
 
-
 /* =========================
    IMAGE DOTS
 ========================= */
@@ -796,7 +738,6 @@ a {
 
     margin-bottom: 30px;
 }
-
 
 .image-dot {
     width: 9px;
@@ -814,11 +755,9 @@ a {
     padding: 0;
 }
 
-
 .image-dot.active {
     background: #111;
 }
-
 
 
 /* =========================
@@ -828,9 +767,10 @@ a {
 footer {
     padding: 30px 7%;
 
-    background: #080808;
+    /* Transparent so background continues */
+    background: rgba(8, 8, 8, 0.70);
 
-    color: #777;
+    color: #aaa;
 
     display: flex;
 
@@ -840,23 +780,19 @@ footer {
 }
 
 
-
 /* =========================
    MOBILE
 ========================= */
 
 @media (max-width: 800px) {
 
-
     .navbar {
         padding: 20px 5%;
     }
 
-
     .nav-links {
         gap: 15px;
     }
-
 
     .hero {
         grid-template-columns: 1fr;
@@ -866,18 +802,15 @@ footer {
         gap: 40px;
     }
 
-
     .profile-picture {
         width: 220px;
 
         height: 280px;
     }
 
-
     .option-container {
         grid-template-columns: 1fr;
     }
-
 
     .content-section {
         grid-template-columns: 1fr;
@@ -885,21 +818,17 @@ footer {
         padding: 80px 5%;
     }
 
-
     .about-grid {
         grid-template-columns: 1fr;
     }
-
 
     .projects-grid {
         grid-template-columns: 1fr;
     }
 
-
     .modal {
         padding: 10px;
     }
-
 
     .modal-content {
         padding: 35px 25px;
@@ -907,16 +836,13 @@ footer {
         max-height: 95vh;
     }
 
-
     .modal-content h2 {
         font-size: 30px;
     }
 
-
     .project-image {
         height: 280px;
     }
-
 
     .gallery-button {
         width: 40px;
@@ -925,7 +851,6 @@ footer {
 
         font-size: 18px;
     }
-
 
     footer {
         flex-direction: column;
