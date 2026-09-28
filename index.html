@@ -1,680 +1,508 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Christian Jaero P. Ybañez - IT Student Portfolio">
     <title>Christian Ybañez | IT Portfolio</title>
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23171717'/%3E%3Ctext x='50' y='67' text-anchor='middle' font-size='52' font-family='Arial' fill='white'%3ECY%3C/text%3E%3C/svg%3E">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
-
     <nav class="navbar">
+        <a href="#home" class="logo">Christian's Portfolio</a>
 
-        <div class="logo">
-            Christian's Portfolio
-        </div>
+        <button
+            class="menu-button"
+            id="menuButton"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
 
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
-
     </nav>
 
+    <main>
 
-    <!-- =========================
-         HOME SECTION
-    ========================== -->
+        <section class="hero" id="home">
+            <div class="hero-content">
 
-    <section id="home" class="hero">
+                <div class="hero-image-container">
+                    <img
+                        src="profile.jpg"
+                        alt="Christian Jaero P. Ybañez"
+                        class="profile-picture"
+                    >
+                </div>
 
-        <div class="hero-left">
+                <div class="hero-text">
+                    <p class="hero-small-title">HELLO, I'M</p>
 
-            <div class="profile-picture">
+                    <h1>Christian Jaero P. Ybañez</h1>
 
-                <img
-                    src="profile.jpg"
-                    alt="Profile Photo"
-                >
+                    <h2>Bachelor of Science in Information Technology</h2>
+
+                    <p class="hero-description">
+                        I am an IT student interested in technology, programming,
+                        web development, and creating useful digital solutions.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#about" class="primary-button">About Me</a>
+                        <a href="#projects" class="secondary-button">My Projects</a>
+                    </div>
+
+                    <div class="social-links">
+                        <a
+                            href="https://github.com/Friees/christian-portfolio"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
 
             </div>
 
-        </div>
-
-
-        <div class="hero-right">
-
-            <p class="medium-title">
-                HELLO, I'M
-            </p>
-
-            <h1>
-                Christian Jaero P. Ybañez
-            </h1>
-
-            <h2>
-                Bachelor of Science in Information Technology
-            </h2>
-
-            <p class="intro">
-                I am an Information Technology student who enjoys
-                learning about technology, programming, web development,
-                and creating useful digital solutions.
-            </p>
-
-
-            <!-- Clickable Boxes -->
-
-            <div class="option-container">
-
-                <a
-                    href="#about"
-                    class="option-box"
-                >
-
-                    <div class="box-icon">
-                        01
-                    </div>
-
-                    <div>
-                        <h3>
-                            About Me
-                        </h3>
-
-                        <p>
-                            Learn more about me
-                        </p>
-                    </div>
-
-                    <span class="arrow">
-                        →
+            <div class="hero-options">
+                <a href="#about" class="option-box">
+                    <span class="option-number">01</span>
+                    <span class="option-title">About Me</span>
+                    <span class="option-description">
+                        Learn more about my education, skills, and interests.
                     </span>
-
                 </a>
 
-
-                <a
-                    href="#projects"
-                    class="option-box"
-                >
-
-                    <div class="box-icon">
-                        02
-                    </div>
-
-                    <div>
-                        <h3>
-                            My Projects
-                        </h3>
-
-                        <p>
-                            See the projects I created
-                        </p>
-                    </div>
-
-                    <span class="arrow">
-                        →
+                <a href="#projects" class="option-box">
+                    <span class="option-number">02</span>
+                    <span class="option-title">My Projects</span>
+                    <span class="option-description">
+                        View some of my school and personal projects.
                     </span>
-
                 </a>
-
             </div>
+        </section>
 
-        </div>
+        <section class="section" id="about">
 
-    </section>
-
-
-    <!-- =========================
-         ABOUT SECTION
-    ========================== -->
-
-    <section
-        id="about"
-        class="content-section"
-    >
-
-        <div class="section-number">
-            01
-        </div>
-
-
-        <div class="section-content">
-
-            <p class="section-label">
-                ABOUT ME
-            </p>
-
-            <h2>
-                Who I Am
-            </h2>
-
-            <p class="large-text">
-                I am an Information Technology student interested in
-                technology, programming, and creating digital solutions.
-                I enjoy learning new skills and improving my knowledge
-                through school projects and personal activities.
-            </p>
-
-
-            <!-- About Cards -->
+            <div class="section-heading">
+                <p class="section-label">ABOUT ME</p>
+                <h2>My Background</h2>
+                <p>
+                    Here is a short overview of my education, skills,
+                    interests, and career goal.
+                </p>
+            </div>
 
             <div class="about-grid">
 
-                <!-- EDUCATION -->
-
-                <div class="info-card">
-
-                    <h3>
-                        Education
-                    </h3>
+                <div class="about-card education-card">
+                    <h3>Education</h3>
 
                     <div class="education-item">
-
-                        <strong>
-                            Tertiary
-                        </strong>
-
-                        <p>
-                            Diliman College<br>
-                            2023 - 2027
-                        </p>
-
+                        <h4>Tertiary</h4>
+                        <p>Diliman College</p>
+                        <span>2023 - 2027</span>
                     </div>
-
 
                     <div class="education-item">
-
-                        <strong>
-                            Senior High
-                        </strong>
-
-                        <p>
-                            Eclaro Academy<br>
-                            2021 - 2023
-                        </p>
-
+                        <h4>Senior High School</h4>
+                        <p>Eclaro Academy</p>
+                        <span>2021 - 2023</span>
                     </div>
-
 
                     <div class="education-item">
-
-                        <strong>
-                            Junior High
-                        </strong>
-
-                        <p>
-                            Bagong Silangan High School<br>
-                            2017 - 2021
-                        </p>
-
+                        <h4>Junior High School</h4>
+                        <p>Bagong Silangan High School</p>
+                        <span>2017 - 2021</span>
                     </div>
-
 
                     <div class="education-item">
-
-                        <strong>
-                            Elementary
-                        </strong>
-
-                        <p>
-                            Bagong Silangan Elementary School<br>
-                            2011 - 2017
-                        </p>
-
+                        <h4>Elementary</h4>
+                        <p>Bagong Silangan Elementary School</p>
+                        <span>2011 - 2017</span>
                     </div>
-
                 </div>
 
+<div class="about-card skills-card">
+    <h3>Skills</h3>
 
-                <!-- SKILLS -->
+    <div class="skill">
+        <span class="skill-name">HTML</span>
+        <span class="skill-level">Intermediate</span>
+    </div>
 
-                <div class="info-card">
+    <div class="skill">
+        <span class="skill-name">CSS</span>
+        <span class="skill-level">Intermediate</span>
+    </div>
 
-                    <h3>
-                        Skills
-                    </h3>
+    <div class="skill">
+        <span class="skill-name">JavaScript</span>
+        <span class="skill-level">Intermediate</span>
+    </div>
 
-                    <div class="skills-vertical">
+    <div class="skill">
+        <span class="skill-name">Flutter</span>
+        <span class="skill-level">Intermediate</span>
+    </div>
 
-                        <span>
-                            HTML
-                        </span>
+    <div class="skill">
+        <span class="skill-name">Firebase</span>
+        <span class="skill-level">Intermediate</span>
+    </div>
 
-                        <span>
-                            CSS
-                        </span>
+    <div class="skill">
+        <span class="skill-name">UI/UX Design</span>
+        <span class="skill-level">Intermediate</span>
+    </div>
+</div>
 
-                        <span>
-                            JavaScript
-                        </span>
+                <div class="about-card">
+                    <h3>Interests</h3>
 
-                        <span>
-                            Flutter
-                        </span>
-
-                        <span>
-                            Firebase
-                        </span>
-
-                        <span>
-                            UI/UX Design
-                        </span>
-
+                    <div class="interest-list">
+                        <span>Web Development</span>
+                        <span>UI/UX Design</span>
+                        <span>Mobile Applications</span>
+                        <span>Database Systems</span>
                     </div>
-
                 </div>
 
-
-                <!-- INTERESTS -->
-
-                <div class="info-card">
-
-                    <h3>
-                        Interests
-                    </h3>
+                <div class="about-card goal-card">
+                    <h3>Career Goal</h3>
 
                     <p>
-                        Web Development
+                        My goal is to continue improving my technical skills,
+                        gain experience in the IT field, and create useful
+                        and meaningful digital solutions.
                     </p>
-
-                    <p>
-                        UI/UX Design
-                    </p>
-
-                    <p>
-                        Mobile Applications
-                    </p>
-
-                    <p>
-                        Database Systems
-                    </p>
-
-                </div>
-
-
-                <!-- GOAL -->
-
-                <div class="info-card">
-
-                    <h3>
-                        Goal
-                    </h3>
-
-                    <p>
-                        My goal is to continue improving my technical
-                        skills and gain more experience in the IT field.
-                    </p>
-
                 </div>
 
             </div>
+        </section>
 
+        <section class="section projects-section" id="projects">
 
-            <a
-                href="#projects"
-                class="next-button"
-            >
-                View My Projects →
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         PROJECTS SECTION
-    ========================== -->
-
-    <section
-        id="projects"
-        class="content-section projects-section"
-    >
-
-        <div class="section-number">
-            02
-        </div>
-
-
-        <div class="section-content">
-
-            <p class="section-label">
-                MY PROJECTS
-            </p>
-
-            <h2>
-                Things I Have Created
-            </h2>
-
-            <p class="large-text">
-                Here are some of the projects I have worked on as an
-                IT student.
-            </p>
-
-
-            <!-- PROJECT GRID -->
+            <div class="section-heading">
+                <p class="section-label">MY WORK</p>
+                <h2>Projects</h2>
+                <p>
+                    These are some of the projects I have worked on as an
+                    IT student.
+                </p>
+            </div>
 
             <div class="projects-grid">
 
-                <!-- PROJECT 1 -->
-
-                <div class="project-card">
-
-                    <div class="project-number">
-                        01
+                <article class="project-card">
+                    <div class="project-image-container">
+                        <img
+                            src="images/evote-1.jpg"
+                            alt="E-VOTE project"
+                            class="project-preview"
+                        >
                     </div>
 
-                    <h3>
-                        E-VOTE
-                    </h3>
+                    <div class="project-content">
+                        <p class="project-number">01</p>
 
-                    <p>
-                        A client-based mobile voting system designed
-                        for school elections and voting events.
-                    </p>
+                        <h3>E-VOTE</h3>
 
-                    <div class="project-tags">
+                        <p>
+                            A client-based mobile voting system designed for
+                            school elections and voting events.
+                        </p>
 
-                        <span>
-                            Flutter
-                        </span>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Firestore</span>
+                        </div>
 
-                        <span>
-                            Firebase
-                        </span>
+                        <button
+                            type="button"
+                            class="view-project-button"
+                            onclick="showProject('evote')"
+                        >
+                            View Project
+                        </button>
+                    </div>
+                </article>
 
-                        <span>
-                            Mobile App
-                        </span>
-
+                <article class="project-card">
+                    <div class="project-image-container">
+                        <img
+                            src="images/cafe-1.jpg"
+                            alt="Kaventra Cafe project"
+                            class="project-preview"
+                        >
                     </div>
 
-                    <button
-                        onclick="showProject('evote')"
-                    >
-                        View Project
-                    </button>
+                    <div class="project-content">
+                        <p class="project-number">02</p>
 
-                </div>
+                        <h3>KAVENTRA CAFÉ</h3>
 
+                        <p>
+                            A modern café website concept focused on UI/UX
+                            design, layout, typography, and visual presentation.
+                        </p>
 
-                <!-- PROJECT 2 -->
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>UI/UX Design</span>
+                            <span>Prototyping</span>
+                        </div>
 
-                <div class="project-card">
+                        <button
+                            type="button"
+                            class="view-project-button"
+                            onclick="showProject('cafe')"
+                        >
+                            View Project
+                        </button>
+                    </div>
+                </article>
 
-                    <div class="project-number">
-                        02
+                <article class="project-card">
+                    <div class="project-image-container">
+                        <img
+                            src="images/database-1.jpg"
+                            alt="Student Database project"
+                            class="project-preview"
+                        >
                     </div>
 
-                    <h3>
-                        KAVENTRA CAFÉ
-                    </h3>
+                    <div class="project-content">
+                        <p class="project-number">03</p>
 
-                    <p>
-                        A modern café website concept created as a
-                        UI/UX design project.
-                    </p>
+                        <h3>STUDENT DATABASE</h3>
 
-                    <div class="project-tags">
+                        <p>
+                            A database project created to organize student
+                            information and related records.
+                        </p>
 
-                        <span>
-                            Figma
-                        </span>
+                        <div class="project-tags">
+                            <span>SQL</span>
+                            <span>Database Design</span>
+                            <span>ERD</span>
+                        </div>
 
-                        <span>
-                            UI/UX
-                        </span>
+                        <button
+                            type="button"
+                            class="view-project-button"
+                            onclick="showProject('database')"
+                        >
+                            View Project
+                        </button>
+                    </div>
+                </article>
 
-                        <span>
-                            Web Design
-                        </span>
-
+                <article class="project-card">
+                    <div class="project-image-container">
+                        <img
+                            src="images/portfolio-1.jpg"
+                            alt="Portfolio Website project"
+                            class="project-preview"
+                        >
                     </div>
 
-                    <button
-                        onclick="showProject('cafe')"
-                    >
-                        View Project
-                    </button>
+                    <div class="project-content">
+                        <p class="project-number">04</p>
 
-                </div>
+                        <h3>PORTFOLIO WEBSITE</h3>
 
+                        <p>
+                            A personal portfolio website created to showcase
+                            my background, skills, and projects.
+                        </p>
 
-                <!-- PROJECT 3 -->
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
 
-                <div class="project-card">
-
-                    <div class="project-number">
-                        03
+                        <button
+                            type="button"
+                            class="view-project-button"
+                            onclick="showProject('portfolio')"
+                        >
+                            View Project
+                        </button>
                     </div>
-
-                    <h3>
-                        STUDENT DATABASE
-                    </h3>
-
-                    <p>
-                        A database project designed to organize and
-                        manage student-related information.
-                    </p>
-
-                    <div class="project-tags">
-
-                        <span>
-                            Database
-                        </span>
-
-                        <span>
-                            SQL
-                        </span>
-
-                        <span>
-                            ERD
-                        </span>
-
-                    </div>
-
-                    <button
-                        onclick="showProject('database')"
-                    >
-                        View Project
-                    </button>
-
-                </div>
-
-
-                <!-- PROJECT 4 -->
-
-                <div class="project-card">
-
-                    <div class="project-number">
-                        04
-                    </div>
-
-                    <h3>
-                        PORTFOLIO WEBSITE
-                    </h3>
-
-                    <p>
-                        A personal portfolio website created to
-                        showcase my skills, projects, and background.
-                    </p>
-
-                    <div class="project-tags">
-
-                        <span>
-                            HTML
-                        </span>
-
-                        <span>
-                            CSS
-                        </span>
-
-                        <span>
-                            JavaScript
-                        </span>
-
-                    </div>
-
-                    <button
-                        onclick="showProject('portfolio')"
-                    >
-                        View Project
-                    </button>
-
-                </div>
+                </article>
 
             </div>
+        </section>
 
-        </div>
+        <section class="section contact-section" id="contact">
 
-    </section>
+            <div class="section-heading">
+                <p class="section-label">CONTACT</p>
+                <h2>Let's Connect</h2>
+                <p>
+                    You can find me through the following links.
+                </p>
+            </div>
 
+            <div class="contact-grid">
 
-    <!-- =========================
-         PROJECT DETAILS POPUP
-    ========================== -->
+                <a
+                    href="https://github.com/Friees/christian-portfolio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card"
+                >
+                    <span class="contact-title">GitHub</span>
+                    <span class="contact-description">
+                        View my projects and code.
+                    </span>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card"
+                >
+                    <span class="contact-title">LinkedIn</span>
+                    <span class="contact-description">
+                        Connect with me professionally.
+                    </span>
+                </a>
+
+                <a
+                    href="mailto:your-email@example.com"
+                    class="contact-card"
+                >
+                    <span class="contact-title">Email</span>
+                    <span class="contact-description">
+                        Send me an email.
+                    </span>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
 
     <div
+        class="project-modal"
         id="projectModal"
-        class="modal"
+        aria-hidden="true"
     >
-
         <div class="modal-content">
 
             <button
-                class="close-button"
+                type="button"
+                class="modal-close"
                 onclick="closeProject()"
+                aria-label="Close project"
             >
                 ×
             </button>
 
-
-            <p class="section-label">
-                PROJECT DETAILS
-            </p>
-
-
-            <h2 id="modalTitle">
-                Project Title
-            </h2>
-
-
-            <!-- IMAGE GALLERY -->
-
-            <div class="gallery">
+            <div class="modal-gallery">
 
                 <button
-                    class="gallery-button previous"
+                    type="button"
+                    class="gallery-button gallery-previous"
                     onclick="previousImage()"
                     aria-label="Previous image"
                 >
-                    ←
+                    ‹
                 </button>
 
-
                 <img
-                    id="modalImage"
-                    class="project-image"
                     src=""
-                    alt="Project Image"
+                    alt=""
+                    id="modalImage"
+                    class="modal-image"
                 >
 
-
                 <button
-                    class="gallery-button next"
+                    type="button"
+                    class="gallery-button gallery-next"
                     onclick="nextImage()"
                     aria-label="Next image"
                 >
-                    →
+                    ›
                 </button>
 
+                <div class="image-counter" id="imageCounter">
+                    1 / 1
+                </div>
+
             </div>
 
+            <div class="gallery-dots" id="galleryDots"></div>
 
-            <!-- Image Counter -->
+            <div class="modal-info">
+                <p class="modal-label">PROJECT</p>
 
-            <div
-                id="imageCounter"
-                class="image-counter"
-            >
-                1 / 1
+                <h2 id="modalTitle"></h2>
+
+                <p
+                    id="modalDescription"
+                    class="modal-description"
+                ></p>
+
+                <div>
+                    <h3>Technologies</h3>
+                    <div
+                        class="modal-technologies"
+                        id="modalTechnologies"
+                    ></div>
+                </div>
+
+                <div class="modal-role-container">
+                    <h3>My Role</h3>
+                    <p id="modalRole"></p>
+                </div>
             </div>
-
-
-            <!-- Image Dots -->
-
-            <div
-                id="imageDots"
-                class="image-dots"
-            ></div>
-
-
-            <!-- Description -->
-
-            <p id="modalDescription">
-                Project description.
-            </p>
-
-
-            <!-- Technologies -->
-
-            <h3>
-                Technologies Used
-            </h3>
-
-            <div
-                id="modalTechnologies"
-                class="skills"
-            ></div>
-
-
-            <!-- Role -->
-
-            <h3>
-                My Role
-            </h3>
-
-            <p id="modalRole">
-                My role in this project.
-            </p>
 
         </div>
-
     </div>
 
+    <button
+        type="button"
+        id="backToTop"
+        class="back-to-top"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
-
-        <p>
-            © 2026 Christian Jaero P. Ybañez.
-            All Rights Reserved.
-        </p>
-
-        <p>
-            IT Portfolio
-        </p>
-
+    <footer class="footer">
+        <p>© 2026 Christian Jaero P. Ybañez. All Rights Reserved.</p>
+        <p>IT Portfolio</p>
     </footer>
-
-
-    <!-- JavaScript -->
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
